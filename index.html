@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CLÉVANE store — Made to stand out</title>
+<meta name="description" content="CLÉVANE store, boutique inspirée par le fondateur Sibali Chris Donny : vêtements, chaussures et accessoires. Livraison au Congo-Brazzaville et à l’international.">
+<meta property="og:title" content="CLÉVANE store — Made to stand out"><meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🛍️%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--k:#000;--g1:#f5f5f4;--g2:#e2e2e0;--g3:#767672;--w:#fff;--ok:#1f6b3a;--bad:#a12a2a}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:80px}
+body{font:15px/1.55 Manrope,system-ui,sans-serif;color:var(--k);background:var(--w);-webkit-font-smoothing:antialiased}
+h1,h2,h3,.logo span{font-family:'Bodoni Moda',Georgia,serif;font-weight:500}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--k);outline-offset:2px}
+#top{background:var(--k);color:#fff;text-align:center;font-size:12.5px;padding:8px 12px}
+#hd{position:sticky;top:0;background:var(--w);border-bottom:1px solid var(--g2);z-index:20}
+.bar{display:flex;align-items:center;gap:12px;max-width:1280px;margin:auto;padding:8px 16px}
+.logo{display:flex;flex-direction:column;align-items:center;line-height:1}
+.logo span{font-size:25px;letter-spacing:.34em;padding-left:.34em}
+.logo small{font-size:10px;letter-spacing:.62em;padding-left:.62em;margin-top:3px;color:var(--g3)}
+nav{display:flex;gap:20px;flex:1;justify-content:center;font-size:13.5px;flex-wrap:wrap}
+nav a:hover{text-decoration:underline;text-underline-offset:4px}
+.act{display:flex;margin-left:auto}
+.ic{background:none;border:0;width:44px;height:44px;font-size:20px;cursor:pointer;position:relative;display:grid;place-items:center}
+.n{position:absolute;top:5px;right:2px;background:var(--k);color:#fff;font:600 10px Manrope;border-radius:9px;min-width:16px;text-align:center;padding:0 3px}
+.n:empty{display:none}.mb{display:none}
+#sr{display:none;padding:0 16px 12px;max-width:1280px;margin:auto}#sr.on{display:block}
+#sr input{width:100%;padding:12px;border:1px solid var(--g2)}
+@media(max-width:860px){.mb{display:grid}nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--w);flex-direction:column;gap:0;padding:6px 20px;border-bottom:1px solid var(--g2)}nav a{padding:13px 0;border-bottom:1px solid var(--g1)}.nav nav{display:flex}.bar{gap:0}.logo{margin:0 auto 0 4px}.logo span{font-size:21px}}
+.w{max-width:1280px;margin:auto;padding:28px 16px}.c{text-align:center}.c>*{margin:10px auto}
+.hero{min-height:74vh;display:grid;place-items:center;text-align:center;color:#fff;background:#000 center/cover;padding:32px 20px}
+.hero h1{font-size:clamp(44px,10vw,112px);line-height:1;letter-spacing:-.01em;max-width:11ch;margin:0 auto 18px}
+.hero p{color:#c9c9c6;margin-bottom:10px}.hero p.fd{color:#fff;font:400 19px 'Bodoni Moda',Georgia,serif;margin-bottom:28px}.band{background:var(--g1);text-align:center;padding:44px 16px}.band p{color:var(--g3);font-size:14px}.band h2{font-size:clamp(28px,6vw,48px);margin-top:6px}
+.hero hr{border:0;border-top:1px solid #fff5;width:64px;margin:0 auto 22px}
+.btn{display:inline-block;background:var(--k);color:#fff;border:1px solid var(--k);padding:13px 26px;cursor:pointer;font-weight:600;font-size:14px;min-height:46px;text-align:center}
+.btn.o{background:var(--w);color:var(--k)}.btn.wh{background:#fff;color:#000;border-color:#fff}.btn[disabled]{opacity:.4;cursor:not-allowed}
+.btn.sm{padding:8px 14px;min-height:36px;font-size:13px}
+.sh{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px;gap:12px}.sh h2{font-size:30px}.sh a{text-decoration:underline;text-underline-offset:4px;font-size:14px}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.cats a{border:1px solid var(--g2);padding:26px 12px;text-align:center;font-family:'Bodoni Moda',serif;font-size:19px}.cats a:hover{background:var(--k);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:22px 14px}
+@media(max-width:560px){.grid{grid-template-columns:repeat(2,1fr)}}
+.card h3{font:500 14px Manrope;margin:10px 0 2px}.card p{font-size:14px}.card s{color:var(--g3);margin-left:6px}
+.im{aspect-ratio:4/5;background:var(--g1);position:relative;overflow:hidden}.im img{width:100%;height:100%;object-fit:cover;display:block}
+.ph{display:grid;place-items:center;height:100%;font:400 72px 'Bodoni Moda',serif;color:#bdbdb9}
+.tag{position:absolute;top:8px;left:8px;background:var(--w);font:600 10.5px Manrope;padding:3px 7px;font-style:normal}.tag.r{left:auto;right:8px;background:var(--k);color:#fff}
+.perks{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;border-top:1px solid var(--g2)}.perks h3{font-size:19px;margin-bottom:6px}.perks p{color:#444;font-size:14px}
+.flt{border:1px solid var(--g2);margin-bottom:18px}.flt summary{padding:12px 14px;cursor:pointer;font-weight:600}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;padding:0 14px 14px}
+label{display:block;font-size:13px;font-weight:600}label input:not([type=checkbox]):not([type=radio]),label select,label textarea{display:block;width:100%;margin-top:5px;padding:11px;border:1px solid #c9c9c6;background:var(--w);font-weight:400;min-height:44px}
+.fm{display:grid;gap:14px;max-width:560px}.fm h3{font-size:24px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:end}.row label{flex:1;min-width:150px}
+.pdp{display:grid;grid-template-columns:1fr 1fr;gap:36px}@media(max-width:760px){.pdp{grid-template-columns:1fr}}
+.th{display:flex;gap:8px;margin-top:8px}.th img{width:64px;height:80px;object-fit:cover;cursor:pointer;border:1px solid var(--g2)}
+.pdp h1{font-size:34px;line-height:1.15;margin-bottom:8px}.pr{font-size:20px;margin:6px 0 14px}.pr s{color:var(--g3);font-size:16px;margin-left:8px}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px}.pill{min-width:46px;min-height:44px;padding:0 14px;border:1px solid #c9c9c6;background:var(--w);cursor:pointer}.pill.on{background:var(--k);color:#fff;border-color:var(--k)}
+.qty{display:inline-flex;border:1px solid #c9c9c6;align-items:center}.qty button{width:44px;height:44px;border:0;background:none;font-size:18px;cursor:pointer}.qty span{min-width:34px;text-align:center}
+.ln{display:grid;grid-template-columns:76px 1fr auto;gap:14px;padding:14px 0;border-bottom:1px solid var(--g2);align-items:center}.ln .im{aspect-ratio:4/5}
+.box{border:1px solid var(--g2);padding:18px;margin-top:18px;display:grid;gap:8px}.box div{display:flex;justify-content:space-between;gap:12px}.box .t{font-weight:600;font-size:17px}
+.two{display:grid;grid-template-columns:1.3fr 1fr;gap:34px;align-items:start}@media(max-width:860px){.two{grid-template-columns:1fr}}
+.opt{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--g2);padding:12px;margin-bottom:8px;font-weight:400;cursor:pointer}.opt input{margin-top:4px;width:18px;height:18px}.opt b{display:block}.opt small{color:var(--g3)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:22px;border-bottom:1px solid var(--g2)}.tabs a{padding:10px 14px;font-weight:600;color:var(--g3)}.tabs a.on{color:var(--k);border-bottom:2px solid var(--k)}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-bottom:22px}.kpi div{border:1px solid var(--g2);padding:16px}.kpi b{display:block;font:500 26px 'Bodoni Moda',serif}.kpi span{font-size:13px;color:var(--g3)}
+.bars{display:flex;align-items:flex-end;gap:5px;height:150px;border-bottom:1px solid var(--g2);margin:10px 0 4px}.bars i{flex:1;background:var(--k);min-height:2px}.bl{display:flex;gap:5px;font-size:10px;color:var(--g3)}.bl span{flex:1;text-align:center}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--g2);white-space:nowrap}
+.ord{border:1px solid var(--g2);margin-bottom:8px}.ord summary{padding:12px 14px;cursor:pointer}.ob{padding:0 14px 14px;display:grid;gap:10px}.ord ul{padding-left:18px}
+.tl{list-style:none;padding:0;display:grid;gap:10px;margin:16px 0}.tl li{padding-left:28px;position:relative;color:var(--g3)}.tl li:before{content:"";position:absolute;left:4px;top:5px;width:12px;height:12px;border:2px solid var(--g3);border-radius:50%}.tl li.d{color:var(--k)}.tl li.d:before{background:var(--k);border-color:var(--k)}
+.todo{background:var(--g1);padding:10px 14px;margin-bottom:18px;font-size:13px}
+.txt{max-width:720px}.txt h3{font-size:22px;margin:22px 0 6px}.txt p,.txt li{margin-bottom:8px}
+footer{background:var(--k);color:#d6d6d3;margin-top:40px}footer .w{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:28px}footer h3{color:#fff;font-size:18px;margin-bottom:10px}footer a{display:block;padding:4px 0;font-size:14px}footer a:hover{text-decoration:underline}footer .sl{grid-column:1/-1;border-top:1px solid #333;padding-top:16px;font-size:12.5px;color:#8d8d89}
+.wa{position:fixed;right:16px;bottom:16px;background:#1f9d55;color:#fff;padding:13px 18px;font-weight:600;z-index:30;box-shadow:0 4px 14px #0004}
+#toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,90px);background:var(--k);color:#fff;padding:12px 18px;z-index:50;transition:transform .25s;max-width:90vw;text-align:center}#toast.on{transform:translate(-50%,0)}#toast.bad{background:var(--bad)}
+.ref{font:500 34px 'Bodoni Moda',serif;letter-spacing:.04em}.err{color:var(--bad)}.muted{color:var(--g3)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head>
+<body>
+<div id="top"></div><header id="hd"></header><main id="app"><div class="w c"><p class="muted">Chargement…</p></div></main><footer id="ft"></footer><div id="wa"></div><div id="toast" role="status"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script>
+const SB_URL='https://nglyedicsaxcvcrjryly.supabase.co';
+const SB_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5nbHllZGljc2F4Y3ZjcmpyeWx5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMzMDI3NTksImV4cCI6MjEwODg3ODc1OX0._UBtTyniZwA4c_eBpIklbvfkMSwjrFCbC2O3xY2GIJQ';
+const sb=supabase.createClient(SB_URL,SB_KEY);
+const $=s=>document.querySelector(s);
+const money=n=>new Intl.NumberFormat('fr-FR').format(n||0)+' FCFA';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+const slug=s=>norm(s).replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const ST={pending_confirmation:'En attente de confirmation',payment_confirmed:'Paiement confirmé',preparing:'Préparation',shipped:'Expédiée',out_for_delivery:'En cours de livraison',delivered:'Livrée',cancelled:'Annulée'};
+const PM={mtn_momo:'MTN Mobile Money',airtel_money:'Airtel Money',card:'Carte Visa / Mastercard',bank_transfer:'Virement bancaire'};
+const PS={pending:'En attente',paid:'Payé',failed:'Échoué'};
+let S={},CATS=[],PRODS=[],user=null,role='customer',favs=new Set(),cart=[],PSEL={},AP=[];
+try{cart=JSON.parse(localStorage.getItem('clv_cart')||'[]')}catch(e){}
+const saveCart=()=>{try{localStorage.setItem('clv_cart',JSON.stringify(cart))}catch(e){}renderHd()};
+function toast(m,bad){const t=$('#toast');t.textContent=m;t.className='on'+(bad?' bad':'');clearTimeout(toast.t);toast.t=setTimeout(()=>t.className='',3500)}
+const catName=id=>(CATS.find(c=>c.id===id)||{}).name||'';
+const unit=p=>p.promo_price??p.price;
+const priceH=p=>p.promo_price!=null?`${money(p.promo_price)}<s>${money(p.price)}</s>`:money(p.price);
+const imgH=p=>p.images&&p.images[0]?`<img loading="lazy" src="${esc(p.images[0])}" alt="${esc(p.name)}">`:`<div class="ph" aria-hidden="true">${esc(p.name[0])}</div>`;
+const card=p=>`<a class="card" href="#/p/${p.slug}"><div class="im">${imgH(p)}${p.is_demo?'<i class="tag">Démo</i>':''}${p.promo_price!=null?'<i class="tag r">Promo</i>':''}</div><h3>${p.brand?`<span class="muted">${esc(p.brand)}</span><br>`:''}${esc(p.name)}</h3><p>${priceH(p)}</p></a>`;
+function setMeta(t,d,ld){document.title=t;const m=document.querySelector('meta[name=description]');if(m)m.setAttribute('content',d||'');const o=$('#ld');if(o)o.remove();if(ld){const s=document.createElement('script');s.id='ld';s.type='application/ld+json';s.textContent=JSON.stringify(ld);document.head.appendChild(s)}}
+const waLink=(t)=>S.whatsapp_number?`https://wa.me/${String(S.whatsapp_number).replace(/\D/g,'')}?text=${encodeURIComponent(t||'bonjour, puis-je en savoir plus sur ce sujet ?')}`:'';
+
+async function refreshProds(){const r=await sb.from('products').select('*').eq('is_active',true).order('created_at',{ascending:false});PRODS=r.data||[]}
+async function init(){
+  const [st,ct]=await Promise.all([sb.from('settings').select('*'),sb.from('categories').select('*').order('position'),refreshProds()]);
+  S=Object.fromEntries((st.data||[]).map(r=>[r.key,r.value]));CATS=ct.data||[];
+  const {data:{session}}=await sb.auth.getSession();await setUser(session&&session.user);
+  sb.auth.onAuthStateChange((ev,s)=>{setTimeout(async()=>{if(ev==='PASSWORD_RECOVERY'){await setUser(s&&s.user);recovery()}else if(ev==='SIGNED_OUT'){await setUser(null)}},0)});
+  renderFt();renderHd();route();
+}
+async function setUser(u){user=u||null;role='customer';favs=new Set();
+  if(user){const [p,f]=await Promise.all([sb.from('profiles').select('*').eq('id',user.id).maybeSingle(),sb.from('favorites').select('product_id').eq('user_id',user.id)]);user.profile=p.data||{};role=user.profile.role||'customer';favs=new Set((f.data||[]).map(x=>x.product_id))}
+  renderHd()}
+
+function renderHd(){
+  const n=cart.reduce((a,i)=>a+i.qty,0);
+  $('#top').textContent=S.announcement||'';
+  $('#hd').innerHTML=`<div class="bar"><button class="ic mb" onclick="document.body.classList.toggle('nav')" aria-label="Menu">☰</button>
+  <a class="logo" href="#/" aria-label="CLÉVANE store, accueil"><span>CLÉVANE</span><small>store</small></a>
+  <nav>${CATS.map(c=>`<a href="#/shop?cat=${c.slug}">${esc(c.name)}</a>`).join('')}<a href="#/shop?promo=1">Promotions</a></nav>
+  <div class="act"><button class="ic" onclick="$('#sr').classList.toggle('on');$('#sq').focus()" aria-label="Recherche">⌕</button><a class="ic" href="#/favorites" aria-label="Favoris">♡</a><a class="ic" href="#/${user?'account':'login'}" aria-label="Mon compte">☺</a><a class="ic" href="#/cart" aria-label="Panier">🛍<b class="n">${n||''}</b></a></div></div>
+  <form id="sr" onsubmit="event.preventDefault();location.hash='#/shop?q='+encodeURIComponent($('#sq').value);$('#sr').classList.remove('on')"><input id="sq" type="search" placeholder="Rechercher un produit ou une catégorie" aria-label="Rechercher"></form>`}
+function renderFt(){
+  const tk=S.tiktok||'clevane_store',ig=S.instagram||'clevane_store',em=S.email||'clevanestore@gmail.com';
+  $('#ft').innerHTML=`<div class="w"><div><h3>CLÉVANE store</h3><p>Made to stand out 🛍️</p><p>Boutique inspirée par le fondateur Sibali Chris Donny</p><p class="muted">Congo-Brazzaville, livraison internationale</p></div>
+  <div><h3>Aide</h3><a href="#/track">Suivre ma commande</a><a href="#/page/faq">FAQ</a><a href="#/page/contact">Contact</a><a href="#/page/livraison">Livraison et retours</a></div>
+  <div><h3>Informations</h3><a href="#/page/cgv">Conditions générales de vente</a><a href="#/page/confidentialite">Politique de confidentialité</a><a href="#/admin">Espace administrateur</a></div>
+  <div><h3>Nous suivre</h3><a href="https://www.tiktok.com/@${esc(tk)}" target="_blank" rel="noopener">TikTok @${esc(tk)}</a><a href="https://www.instagram.com/${esc(ig)}" target="_blank" rel="noopener">Instagram @${esc(ig)}</a><a href="mailto:${esc(em)}">${esc(em)}</a></div>
+  <p class="sl">© ${new Date().getFullYear()} CLÉVANE store. Tous droits réservés.</p></div>`;
+  const w=waLink();$('#wa').innerHTML=w?`<a class="wa" href="${w}" target="_blank" rel="noopener">WhatsApp</a>`:'';
+}
+
+function route(){
+  const h=location.hash.replace(/^#\/?/,''),[path,qs]=h.split('?'),[a,b]=path.split('/');
+  const R={'':home,shop,p:product,cart:cartPg,checkout,track,login,account,favorites,admin,page:staticPage};
+  document.body.classList.remove('nav');window.scrollTo(0,0);
+  Promise.resolve((R[a]||home)(b,new URLSearchParams(qs||''))).catch(e=>{$('#app').innerHTML=`<div class="w c"><h2>Une erreur est survenue</h2><p class="err">${esc(e.message)}</p><a class="btn" href="#/">Retour à l’accueil</a></div>`});
+}
+addEventListener('hashchange',route);
+
+const sect=(t,l,link)=>l.length?`<section class="w"><div class="sh"><h2>${t}</h2>${link?`<a href="${link}">Tout voir</a>`:''}</div><div class="grid">${l.slice(0,8).map(card).join('')}</div></section>`:'';
+function home(){
+  const best=PRODS.filter(p=>p.sold_count>0).sort((a,b)=>b.sold_count-a.sold_count);
+  $('#app').innerHTML=`<section class="hero" style="${S.hero_image?`background-image:linear-gradient(#0009,#0009),url('${esc(S.hero_image)}')`:''}"><div><h1>${esc(S.hero_text||'Made to stand out')}</h1><hr><p>Vêtements, chaussures et accessoires de mode.</p><p class="fd">Boutique inspirée par le fondateur Sibali Chris Donny</p><a class="btn wh" href="#/shop">Découvrir la collection</a></div></section>
+  <section class="w"><div class="cats">${CATS.map(c=>`<a href="#/shop?cat=${c.slug}">${esc(c.name)}</a>`).join('')}</div></section>
+  <section class="band"><p>Boutique inspirée par le fondateur</p><h2>Sibali Chris Donny</h2></section>
+  ${sect('Nouveautés',PRODS.filter(p=>p.is_new),'#/shop?new=1')}${sect('Tendances du moment',PRODS.filter(p=>p.is_trending),'#/shop')}${sect('Nos meilleures ventes',best)}${sect('Promotions et offres spéciales',PRODS.filter(p=>p.promo_price!=null),'#/shop?promo=1')}
+  <section class="w perks"><div><h3>Livraison locale</h3><p>${esc(S.delay_local||'')}</p></div><div><h3>Livraison internationale</h3><p>${esc(S.delay_international||'')}</p></div><div><h3>Paiement</h3><p>Mobile money, carte ou virement, confirmé avec vous avant l’expédition.</p></div><div><h3>Une question ?</h3><p>Écrivez-nous sur WhatsApp, TikTok ou Instagram.</p></div></section>`;
+  setMeta('CLÉVANE store — Made to stand out','CLÉVANE store, boutique inspirée par le fondateur Sibali Chris Donny : vêtements, chaussures et accessoires. Livraison au Congo-Brazzaville et à l’international.',{'@context':'https://schema.org','@type':'Organization',name:'CLÉVANE store',slogan:'Made to stand out',founder:{'@type':'Person',name:'Sibali Chris Donny'}});
+}
+
+function shop(_,q){
+  const f={q:q.get('q')||'',cat:q.get('cat')||'',promo:q.get('promo'),nw:q.get('new'),min:+q.get('min')||0,max:+q.get('max')||0,size:q.get('size')||'',color:q.get('color')||'',stock:q.get('stock'),brand:q.get('brand')||'',sort:q.get('sort')||'pop'};
+  const cid=(CATS.find(c=>c.slug===f.cat)||{}).id,ws=norm(f.q).split(/\s+/).filter(Boolean);
+  let L=PRODS.filter(p=>{const h=norm([p.name,p.brand,p.description,catName(p.category_id)].join(' '));return ws.every(w=>h.includes(w))&&(!cid||p.category_id===cid)&&(!f.promo||p.promo_price!=null)&&(!f.nw||p.is_new)&&(!f.min||unit(p)>=f.min)&&(!f.max||unit(p)<=f.max)&&(!f.size||p.sizes.includes(f.size))&&(!f.color||p.colors.includes(f.color))&&(!f.stock||p.stock>0)&&(!f.brand||p.brand===f.brand)});
+  const so={asc:(a,b)=>unit(a)-unit(b),desc:(a,b)=>unit(b)-unit(a),new:(a,b)=>new Date(b.created_at)-new Date(a.created_at),pop:(a,b)=>b.sold_count-a.sold_count||(b.is_trending-a.is_trending)};L.sort(so[f.sort]||so.pop);
+  const brands=[...new Set(PRODS.map(p=>p.brand).filter(Boolean))].sort(),sizes=[...new Set(PRODS.flatMap(p=>p.sizes))],colors=[...new Set(PRODS.flatMap(p=>p.colors))];
+  const opt=(a,v)=>a.map(x=>`<option value="${esc(x)}" ${x===v?'selected':''}>${esc(x)}</option>`).join('');
+  const title=cid?catName(cid):f.promo?'Promotions':f.nw?'Nouveautés':f.q?`Résultats pour « ${f.q} »`:'Toute la boutique';
+  $('#app').innerHTML=`<div class="w"><div class="sh"><h2>${esc(title)}</h2><span class="muted">${L.length} produit${L.length>1?'s':''}</span></div>
+  <details class="flt"><summary>Filtres et tri</summary><form id="ff" onchange="applyF()" onsubmit="event.preventDefault();applyF()"><div class="fg">
+  <label>Recherche<input name="q" type="search" value="${esc(f.q)}"></label>
+  <label>Catégorie<select name="cat"><option value="">Toutes</option>${CATS.map(c=>`<option value="${c.slug}" ${c.slug===f.cat?'selected':''}>${esc(c.name)}</option>`).join('')}</select></label>
+  <label>Marque<select name="brand"><option value="">Toutes</option>${opt(brands,f.brand)}</select></label><label>Prix min (FCFA)<input name="min" type="number" min="0" value="${f.min||''}"></label><label>Prix max (FCFA)<input name="max" type="number" min="0" value="${f.max||''}"></label>
+  <label>Taille<select name="size"><option value="">Toutes</option>${opt(sizes,f.size)}</select></label><label>Couleur<select name="color"><option value="">Toutes</option>${opt(colors,f.color)}</select></label>
+  <label>Trier par<select name="sort"><option value="pop" ${f.sort==='pop'?'selected':''}>Popularité</option><option value="new" ${f.sort==='new'?'selected':''}>Nouveautés</option><option value="asc" ${f.sort==='asc'?'selected':''}>Prix croissant</option><option value="desc" ${f.sort==='desc'?'selected':''}>Prix décroissant</option></select></label>
+  <label style="align-self:end"><input type="checkbox" name="stock" value="1" ${f.stock?'checked':''}> En stock uniquement</label></div></form></details>
+  ${L.length?`<div class="grid">${L.map(card).join('')}</div>`:'<div class="c"><p>Aucun produit ne correspond à cette recherche.</p><a class="btn o" href="#/shop">Réinitialiser les filtres</a></div>'}</div>`;
+  setMeta(title+' | CLÉVANE store','Découvrez la collection CLÉVANE store : '+title.toLowerCase()+'.');
+}
+function applyF(){const p=new URLSearchParams();new FormData($('#ff')).forEach((v,k)=>{if(v)p.set(k,v)});if(location.hash.includes('promo=1'))p.set('promo','1');location.hash='#/shop?'+p}
+
+function product(sl){
+  const p=PRODS.find(x=>x.slug===sl);
+  if(!p){$('#app').innerHTML='<div class="w c"><h2>Produit introuvable</h2><a class="btn" href="#/shop">Retour à la boutique</a></div>';return}
+  PSEL={p,size:p.sizes.length===1?p.sizes[0]:'',color:p.colors.length===1?p.colors[0]:'',qty:1};
+  const pills=(k,a)=>a.length?`<label>${k==='size'?'Taille':'Couleur'}</label><div class="pills" role="group">${a.map(v=>`<button type="button" class="pill ${PSEL[k]===v?'on':''}" onclick="pick('${k}',this)">${esc(v)}</button>`).join('')}</div>`:'';
+  const sim=PRODS.filter(x=>x.category_id===p.category_id&&x.id!==p.id).slice(0,4);
+  const stock=p.stock<=0?'<b class="err">Rupture de stock</b>':p.stock<=5?`Plus que ${p.stock} en stock`:'En stock';
+  $('#app').innerHTML=`<div class="w"><div class="pdp"><div><div class="im">${imgH(p)}${p.is_demo?'<i class="tag">Démo</i>':''}</div>${p.images.length>1?`<div class="th">${p.images.map(i=>`<img src="${esc(i)}" alt="" onclick="$('.pdp .im img').src=this.src">`).join('')}</div>`:''}</div>
+  <div><p class="muted">${p.brand?`<b>${esc(p.brand)}</b>, `:''}<a href="#/shop?cat=${(CATS.find(c=>c.id===p.category_id)||{}).slug||''}">${esc(catName(p.category_id))}</a></p><h1>${esc(p.name)}</h1><p class="pr">${priceH(p)}</p><p style="margin-bottom:16px">${esc(p.description)}</p>
+  ${pills('size',p.sizes)}${pills('color',p.colors)}<label>Quantité</label><div class="qty" style="margin:6px 0 14px"><button type="button" onclick="pq(-1)" aria-label="Moins">−</button><span id="pqv">1</span><button type="button" onclick="pq(1)" aria-label="Plus">+</button></div>
+  <p style="margin-bottom:14px">${stock}</p><div class="row"><button class="btn" ${p.stock<=0?'disabled':''} onclick="addCart(false)">Ajouter au panier</button><button class="btn o" ${p.stock<=0?'disabled':''} onclick="addCart(true)">Acheter maintenant</button><button class="btn o" id="fv" onclick="toggleFav('${p.id}')">${favs.has(p.id)?'♥ Dans mes favoris':'♡ Ajouter aux favoris'}</button></div>
+  <div class="row" style="margin-top:14px"><a class="btn o sm" target="_blank" rel="noopener" href="https://wa.me/?text=${encodeURIComponent(p.name+' — '+location.href)}">Partager sur WhatsApp</a><button class="btn o sm" onclick="navigator.clipboard.writeText(location.href).then(()=>toast('Lien copié'))">Copier le lien</button>${S.whatsapp_number?`<a class="btn o sm" target="_blank" rel="noopener" href="${waLink()}">Poser une question</a>`:''}</div></div></div>${sim.length?`<h2 style="margin:40px 0 16px">Produits similaires</h2><div class="grid">${sim.map(card).join('')}</div>`:''}</div>`;
+  setMeta(p.name+' | CLÉVANE store',p.description.slice(0,155),{'@context':'https://schema.org','@type':'Product',name:p.name,description:p.description,image:p.images,category:catName(p.category_id),...(p.brand?{brand:{'@type':'Brand',name:p.brand}}:{}),offers:{'@type':'Offer',price:unit(p),priceCurrency:'XAF',availability:p.stock>0?'https://schema.org/InStock':'https://schema.org/OutOfStock'}});
+}
+function pick(k,el){PSEL[k]=el.textContent;el.parentNode.querySelectorAll('.pill').forEach(b=>b.classList.remove('on'));el.classList.add('on')}
+function pq(d){PSEL.qty=Math.max(1,Math.min(PSEL.p.stock,20,PSEL.qty+d));$('#pqv').textContent=PSEL.qty}
+function addCart(go){const {p,size,color,qty}=PSEL;
+  if(p.sizes.length&&!size)return toast('Choisissez une taille',1);if(p.colors.length&&!color)return toast('Choisissez une couleur',1);
+  const it=cart.find(i=>i.pid===p.id&&i.size===size&&i.color===color);
+  if(it)it.qty=Math.min(it.qty+qty,p.stock,20);else cart.push({pid:p.id,slug:p.slug,name:p.name,price:unit(p),size,color,qty,img:p.images[0]||'',stock:p.stock});
+  saveCart();if(go)location.hash='#/checkout';else toast('Ajouté au panier')}
+async function toggleFav(id){if(!user){toast('Connectez-vous pour utiliser les favoris',1);location.hash='#/login';return}
+  if(favs.has(id)){await sb.from('favorites').delete().eq('user_id',user.id).eq('product_id',id);favs.delete(id)}else{await sb.from('favorites').insert({user_id:user.id,product_id:id});favs.add(id)}
+  const b=$('#fv');if(b)b.textContent=favs.has(id)?'♥ Dans mes favoris':'♡ Ajouter aux favoris'}
+function favorites(){
+  if(!user){$('#app').innerHTML='<div class="w c"><h2>Mes favoris</h2><p>Connectez-vous pour retrouver vos produits favoris.</p><a class="btn" href="#/login">Se connecter</a></div>';return}
+  const L=PRODS.filter(p=>favs.has(p.id));
+  $('#app').innerHTML=`<div class="w"><div class="sh"><h2>Mes favoris</h2></div>${L.length?`<div class="grid">${L.map(card).join('')}</div>`:'<div class="c"><p>Aucun favori pour le moment.</p><a class="btn" href="#/shop">Découvrir la boutique</a></div>'}</div>`}
+
+function syncCart(){cart=cart.filter(i=>{const p=PRODS.find(x=>x.id===i.pid);if(!p||p.stock<1)return false;i.price=unit(p);i.stock=p.stock;i.qty=Math.min(i.qty,p.stock);return true});saveCart()}
+const subtotal=()=>cart.reduce((a,i)=>a+i.price*i.qty,0);
+function cartPg(){syncCart();
+  if(!cart.length){$('#app').innerHTML='<div class="w c"><h2>Votre panier est vide</h2><p>Ajoutez des articles pour passer commande.</p><a class="btn" href="#/shop">Découvrir la boutique</a></div>';return}
+  $('#app').innerHTML=`<div class="w"><div class="sh"><h2>Mon panier</h2></div><div class="two"><div>${cart.map((i,k)=>`<div class="ln"><a class="im" href="#/p/${i.slug}">${i.img?`<img src="${esc(i.img)}" alt="">`:`<div class="ph" style="font-size:32px">${esc(i.name[0])}</div>`}</a><div><b>${esc(i.name)}</b><br><span class="muted">${esc([i.size,i.color].filter(Boolean).join(', '))}</span><br>${money(i.price)}<div class="qty" style="margin-top:8px"><button onclick="chQty(${k},-1)" aria-label="Moins">−</button><span>${i.qty}</span><button onclick="chQty(${k},1)" aria-label="Plus">+</button></div></div><div style="text-align:right"><b>${money(i.price*i.qty)}</b><br><button class="btn o sm" style="margin-top:8px" onclick="rmCart(${k})">Supprimer</button></div></div>`).join('')}</div>
+  <div class="box"><div><span>Sous-total</span><b>${money(subtotal())}</b></div><div><span>Livraison</span><span class="muted">calculée à l’étape suivante</span></div><a class="btn" href="#/checkout">Passer la commande</a></div></div></div>`}
+function chQty(k,d){const i=cart[k];i.qty=Math.max(1,Math.min(i.qty+d,i.stock,20));saveCart();cartPg()}
+function rmCart(k){cart.splice(k,1);saveCart();cartPg()}
+
+function checkout(){syncCart();
+  if(!cart.length){location.hash='#/cart';return}
+  const pr=(user&&user.profile)||{},pms=S.payment_methods||[];
+  $('#app').innerHTML=`<div class="w"><div class="sh"><h2>Validation de la commande</h2></div><form class="two" onsubmit="placeOrder(event)"><div class="fm">
+  <label>Nom complet<input name="name" required autocomplete="name" value="${esc(pr.full_name)}"></label><label>Téléphone<input name="phone" type="tel" required autocomplete="tel" value="${esc(pr.phone)}"></label>
+  <label>E-mail (facultatif)<input name="email" type="email" autocomplete="email" value="${esc(user&&user.email)}"></label>
+  <label>Pays<select name="country"><option>Congo-Brazzaville</option><option>France</option><option>Belgique</option><option>Autre</option></select></label>
+  <label>Ville<input name="city" required autocomplete="address-level2"></label><label>Adresse de livraison<input name="address" required autocomplete="street-address"></label>
+  <label>Informations complémentaires (facultatif)<textarea name="notes" rows="2"></textarea></label>
+  <div><label>Mode de livraison</label>
+  <label class="opt"><input type="radio" name="delivery_mode" value="local" checked onchange="updTot()"><span><b>Livraison locale, ${money(S.shipping_local)}</b><small>${esc(S.delay_local||'')}</small></span></label>
+  <label class="opt"><input type="radio" name="delivery_mode" value="international" onchange="updTot()"><span><b>International, ${money(S.shipping_international)}</b><small>${esc(S.delay_international||'')}</small></span></label></div>
+  <div><label>Moyen de paiement souhaité</label>${pms.map((m,i)=>`<label class="opt"><input type="radio" name="payment_method" value="${m}" ${i?'':'checked'}><span><b>${PM[m]||m}</b></span></label>`).join('')}<small class="muted">Rien n’est prélevé maintenant : les instructions de paiement s’affichent après la validation, et la commande est confirmée une fois le paiement vérifié par la boutique.</small></div></div>
+  <div class="box"><h3>Récapitulatif</h3>${cart.map(i=>`<div><span>${i.qty} × ${esc(i.name)} <span class="muted">${esc([i.size,i.color].filter(Boolean).join(', '))}</span></span><span>${money(i.price*i.qty)}</span></div>`).join('')}
+  <div><span>Sous-total</span><span>${money(subtotal())}</span></div><div><span>Livraison</span><span id="sh">${money(S.shipping_local)}</span></div><div class="t"><span>Total</span><span id="tt">${money(subtotal()+(+S.shipping_local||0))}</span></div><button class="btn" id="po">Confirmer la commande</button></div></form></div>`}
+function updTot(){const m=document.querySelector('[name=delivery_mode]:checked').value,f=+S['shipping_'+m]||0;$('#sh').textContent=money(f);$('#tt').textContent=money(subtotal()+f)}
+function payInstr(m,d){
+  const note=`<p class="muted">Indiquez la référence <b>${esc(d.ref)}</b> si l’application le permet.</p>`;
+  if(m==='mtn_momo'&&S.mtn_number)return `<div class="box txt"><h3>Payer par MTN Mobile Money</h3><p>Envoyez <b>${money(d.total)}</b> au <b>${esc(S.mtn_number)}</b>.</p>${/^https:\/\//.test(S.mtn_pay_link||'')?`<p>Ou payez avec le lien sécurisé :</p><a class="btn" href="${esc(S.mtn_pay_link)}" target="_blank" rel="noopener">Payer avec MTN</a>`:''}${note}</div>`;
+  if(m==='airtel_money'&&S.airtel_number)return `<div class="box txt"><h3>Payer par Airtel Money</h3><p>Envoyez <b>${money(d.total)}</b> au <b>${esc(S.airtel_number)}</b>.</p>${note}</div>`;
+  return '<p>La boutique vous contacte au numéro indiqué pour vous expliquer comment régler.</p>'}
+async function placeOrder(e){e.preventDefault();const b=$('#po');b.disabled=true;b.textContent='Envoi en cours…';
+  const c=Object.fromEntries(new FormData(e.target));
+  const {data,error}=await sb.rpc('create_order',{p_customer:c,p_items:cart.map(i=>({product_id:i.pid,qty:i.qty,size:i.size,color:i.color}))});
+  if(error){toast(error.message,1);b.disabled=false;b.textContent='Confirmer la commande';await refreshProds();return}
+  cart=[];saveCart();await refreshProds();
+  $('#app').innerHTML=`<div class="w c"><h2>Commande enregistrée</h2><p>Votre référence :</p><p class="ref">${esc(data.ref)}</p><p>Total à régler : <b>${money(data.total)}</b></p>${payInstr(c.payment_method,data)}<p>Statut : ${ST.pending_confirmation}. Votre commande est confirmée dès que la boutique a vérifié la réception du paiement.</p><p class="muted">Conservez cette référence : elle sert, avec votre numéro de téléphone, à suivre la commande.</p><a class="btn" href="#/track?ref=${encodeURIComponent(data.ref)}">Suivre ma commande</a></div>`}
+
+function track(_,q){
+  $('#app').innerHTML=`<div class="w"><div class="sh"><h2>Suivre ma commande</h2></div><form class="fm" onsubmit="doTrack(event)"><label>Référence de commande<input name="ref" required placeholder="CLV-2610-00001" value="${esc(q.get('ref'))}"></label><label>Téléphone utilisé pour la commande<input name="phone" type="tel" required></label><button class="btn">Rechercher</button></form><div id="tr" style="margin-top:28px"></div></div>`;setMeta('Suivre ma commande | CLÉVANE store','Suivez votre commande CLÉVANE store avec sa référence.')}
+async function doTrack(e){e.preventDefault();const f=Object.fromEntries(new FormData(e.target));
+  const {data,error}=await sb.rpc('track_order',{p_ref:f.ref,p_phone:f.phone});
+  if(error)return toast(error.message,1);
+  if(!data){$('#tr').innerHTML='<p class="err">Aucune commande ne correspond à cette référence et à ce téléphone. Vérifiez les informations saisies.</p>';return}
+  const steps=['pending_confirmation','payment_confirmed','preparing','shipped','out_for_delivery','delivered'],cur=steps.indexOf(data.status);
+  $('#tr').innerHTML=`<div class="box txt"><h3>Commande ${esc(data.ref)}</h3><p>Statut : <b>${ST[data.status]}</b>. Paiement : ${PS[data.payment_status]}.</p>
+  ${data.status==='cancelled'?'':`<ul class="tl">${steps.map((s,i)=>`<li class="${i<=cur?'d':''}">${ST[s]}</li>`).join('')}</ul>`}
+  ${data.tracking_number?`<p>Numéro de suivi : <b>${esc(data.tracking_number)}</b></p>`:''}
+  <ul>${data.items.map(i=>`<li>${i.qty} × ${esc(i.name)} ${esc([i.size,i.color].filter(Boolean).join(', '))}, ${money(i.unit_price*i.qty)}</li>`).join('')}</ul><p>Livraison : ${money(data.shipping_fee)}. Total : <b>${money(data.total)}</b>.</p></div>`}
+
+function login(mode){
+  const su=mode==='signup';
+  $('#app').innerHTML=`<div class="w"><div class="tabs"><a class="${su?'':'on'}" href="#/login">Connexion</a><a class="${su?'on':''}" href="#/login/signup">Créer un compte</a></div>
+  <form class="fm" onsubmit="${su?'doSignup':'doLogin'}(event)">${su?'<label>Nom complet<input name="name" required autocomplete="name"></label><label>Téléphone<input name="phone" type="tel" autocomplete="tel"></label>':''}
+  <label>E-mail<input name="email" type="email" required autocomplete="email"></label><label>Mot de passe${su?' (8 caractères minimum)':''}<input name="password" type="password" required minlength="${su?8:1}" autocomplete="${su?'new-password':'current-password'}"></label>
+  <button class="btn">${su?'Créer mon compte':'Se connecter'}</button>${su?'':'<a href="#/login" onclick="return forgot()" class="muted" style="text-decoration:underline">Mot de passe oublié ?</a>'}</form></div>`}
+async function doLogin(e){e.preventDefault();const f=Object.fromEntries(new FormData(e.target));
+  const {data,error}=await sb.auth.signInWithPassword({email:f.email,password:f.password});
+  if(error)return toast('E-mail ou mot de passe incorrect',1);
+  await setUser(data.user);location.hash=role==='admin'?'#/admin':'#/account'}
+async function doSignup(e){e.preventDefault();const f=Object.fromEntries(new FormData(e.target));
+  const {data,error}=await sb.auth.signUp({email:f.email,password:f.password,options:{data:{full_name:f.name,phone:f.phone}}});
+  if(error)return toast(error.message,1);
+  if(data.session){await setUser(data.user);location.hash='#/account'}else{$('#app').innerHTML='<div class="w c"><h2>Vérifiez votre e-mail</h2><p>Un message de confirmation vous a été envoyé. Cliquez sur le lien pour activer votre compte, puis connectez-vous.</p></div>'}}
+async function forgot(){const em=prompt('Votre adresse e-mail :');if(!em)return false;
+  const {error}=await sb.auth.resetPasswordForEmail(em,{redirectTo:location.origin+location.pathname});
+  toast(error?error.message:'Si ce compte existe, un e-mail de récupération vient d’être envoyé.',!!error);return false}
+function recovery(){$('#app').innerHTML='<div class="w"><form class="fm" onsubmit="newPw(event)"><h3>Nouveau mot de passe</h3><label>Mot de passe (8 caractères minimum)<input name="p" type="password" minlength="8" required autocomplete="new-password"></label><button class="btn">Enregistrer</button></form></div>'}
+async function newPw(e){e.preventDefault();const {error}=await sb.auth.updateUser({password:new FormData(e.target).get('p')});if(error)return toast(error.message,1);toast('Mot de passe modifié');location.hash='#/account'}
+
+async function account(){
+  if(!user){location.hash='#/login';return}
+  const {data:O}=await sb.from('orders').select('*,order_items(*)').order('created_at',{ascending:false});const pr=user.profile||{};
+  $('#app').innerHTML=`<div class="w"><div class="sh"><h2>Mon compte</h2><button class="btn o sm" onclick="logout()">Se déconnecter</button></div><div class="two"><div>
+  <h3 style="margin-bottom:10px">Mes commandes</h3>${(O||[]).map(o=>`<details class="ord"><summary><b>${o.ref}</b>, ${money(o.total)}, ${ST[o.status]}</summary><div class="ob"><ul>${o.order_items.map(i=>`<li>${i.qty} × ${esc(i.name)} ${esc([i.size,i.color].filter(Boolean).join(', '))}</li>`).join('')}</ul>${o.tracking_number?`<p>Suivi : ${esc(o.tracking_number)}</p>`:''}<a class="btn o sm" href="#/track?ref=${o.ref}">Suivre cette commande</a></div></details>`).join('')||'<p class="muted">Aucune commande pour le moment.</p>'}
+  <h3 style="margin:26px 0 10px">Besoin d’aide ?</h3><form class="fm" onsubmit="sendHelp(event)"><label>Référence de commande (facultatif)<input name="ref"></label><label>Votre message<textarea name="msg" rows="3" required minlength="3"></textarea></label><button class="btn">Envoyer la demande</button></form></div>
+  <div><h3 style="margin-bottom:10px">Mes informations</h3><form class="fm" onsubmit="saveProfile(event)"><label>Nom complet<input name="full_name" value="${esc(pr.full_name)}"></label><label>Téléphone<input name="phone" type="tel" value="${esc(pr.phone)}"></label><label>E-mail<input value="${esc(user.email)}" disabled></label><button class="btn">Enregistrer</button></form>
+  <p style="margin-top:16px"><a href="#/favorites" style="text-decoration:underline">Mes favoris</a>${role==='admin'?' · <a href="#/admin" style="text-decoration:underline">Espace administrateur</a>':''}</p></div></div></div>`}
+async function saveProfile(e){e.preventDefault();const f=Object.fromEntries(new FormData(e.target));const {error}=await sb.from('profiles').update(f).eq('id',user.id);if(error)return toast(error.message,1);Object.assign(user.profile,f);toast('Informations enregistrées')}
+async function sendHelp(e){e.preventDefault();const f=Object.fromEntries(new FormData(e.target));const {error}=await sb.from('support_requests').insert({user_id:user.id,order_ref:f.ref||null,message:f.msg});if(error)return toast(error.message,1);e.target.reset();toast('Demande envoyée, la boutique vous répondra')}
+async function logout(){await sb.auth.signOut();await setUser(null);location.hash='#/'}
+
+const PAGES={
+ faq:['FAQ',()=>`<h3>Comment commander ?</h3><p>Choisissez vos articles, ajoutez-les au panier puis validez la commande. Vous recevez une référence unique.</p><h3>Comment payer ?</h3><p>La boutique vous contacte pour confirmer la commande et vous indiquer comment régler (mobile money, carte ou virement).</p><h3>Quels sont les délais de livraison ?</h3><p>Livraison locale : ${esc(S.delay_local||'')}. International : ${esc(S.delay_international||'')}.</p><h3>Comment suivre ma commande ?</h3><p>Rendez-vous sur <a href="#/track" style="text-decoration:underline">Suivre ma commande</a> avec votre référence et votre numéro de téléphone.</p>`],
+ livraison:['Livraison et retours',()=>`<div class="todo">Version provisoire : les conditions de retour sont à compléter par la boutique.</div><h3>Livraison</h3><p>Locale : ${esc(S.delay_local||'')} (${money(S.shipping_local)}).</p><p>Internationale : ${esc(S.delay_international||'')} (${money(S.shipping_international)}).</p><h3>Retours</h3><p>Pour toute demande de retour ou d’échange, contactez-nous avec votre référence de commande.</p>`],
+ cgv:['Conditions générales de vente',()=>`<div class="todo">Version provisoire à compléter et faire valider avant la mise en production (identité du vendeur, adresse, conditions de retour, droit applicable).</div><h3>Vendeur</h3><p>CLÉVANE store, boutique inspirée par le fondateur Sibali Chris Donny.</p><h3>Commandes</h3><p>Une commande est enregistrée à la validation du formulaire et devient ferme après confirmation par la boutique et réception du paiement.</p><h3>Prix</h3><p>Les prix sont indiqués en FCFA. Les frais de livraison sont affichés avant la validation.</p><h3>Paiement</h3><p>Le règlement est confirmé par la boutique avant la préparation de la commande.</p>`],
+ confidentialite:['Politique de confidentialité',()=>`<div class="todo">Version provisoire à compléter et faire valider avant la mise en production.</div><h3>Responsable</h3><p>CLÉVANE store, boutique inspirée par le fondateur Sibali Chris Donny.</p><h3>Données collectées</h3><p>Nom, téléphone, e-mail, adresse de livraison et contenu de la commande, uniquement pour traiter vos commandes et vous contacter.</p><h3>Vos droits</h3><p>Vous pouvez demander l’accès, la correction ou la suppression de vos données en écrivant à ${esc(S.email||'clevanestore@gmail.com')}.</p>`],
+ contact:['Contact',()=>`<p>CLÉVANE store, boutique inspirée par le fondateur Sibali Chris Donny.</p><p>E-mail : <a href="mailto:${esc(S.email||'clevanestore@gmail.com')}" style="text-decoration:underline">${esc(S.email||'clevanestore@gmail.com')}</a></p><p>TikTok : <a href="https://www.tiktok.com/@${esc(S.tiktok||'clevane_store')}" target="_blank" rel="noopener" style="text-decoration:underline">@${esc(S.tiktok||'clevane_store')}</a></p><p>Instagram : <a href="https://www.instagram.com/${esc(S.instagram||'clevane_store')}" target="_blank" rel="noopener" style="text-decoration:underline">@${esc(S.instagram||'clevane_store')}</a></p>${S.whatsapp_number?`<p><a class="btn" target="_blank" rel="noopener" href="${waLink()}">Écrire sur WhatsApp</a></p>`:''}`]};
+function staticPage(k){const p=PAGES[k]||PAGES.faq;$('#app').innerHTML=`<div class="w txt"><div class="sh"><h2>${p[0]}</h2></div>${p[1]()}</div>`;setMeta(p[0]+' | CLÉVANE store',p[0])}
+
+/* ---------- Administration (les droits sont appliqués par Supabase, côté serveur) ---------- */
+async function admin(tab){
+  if(!user){login();$('#app').insertAdjacentHTML('afterbegin','<div class="w"><p class="muted">Connexion administrateur : identifiez-vous avec un compte autorisé.</p></div>');return}
+  if(role!=='admin'){$('#app').innerHTML='<div class="w c"><h2>Accès réservé</h2><p>Ce compte n’a pas les droits d’administration.</p></div>';return}
+  tab=tab||'dash';const T={dash:'Tableau de bord',products:'Produits',orders:'Commandes',clients:'Clients et assistance',settings:'Paramètres'};
+  $('#app').innerHTML=`<div class="w"><div class="tabs">${Object.entries(T).map(([k,v])=>`<a class="${k===tab?'on':''}" href="#/admin/${k}">${v}</a>`).join('')}</div><div id="ad"><p class="muted">Chargement…</p></div></div>`;
+  await ({dash:aDash,products:aProducts,orders:aOrders,clients:aClients,settings:aSettings}[tab]||aDash)();
+}
+async function aDash(){
+  const [o,pr]=await Promise.all([sb.from('orders').select('*').order('created_at',{ascending:false}).limit(1000),sb.from('products').select('*')]);
+  const O=o.data||[],P=pr.data||[],paid=O.filter(x=>x.payment_status==='paid'&&x.status!=='cancelled'),rev=paid.reduce((a,x)=>a+x.total,0);
+  const days=[...Array(14)].map((_,i)=>{const d=new Date();d.setDate(d.getDate()-13+i);return d.toISOString().slice(0,10)}),by=days.map(d=>paid.filter(x=>x.created_at.slice(0,10)===d).reduce((a,x)=>a+x.total,0)),mx=Math.max(1,...by);
+  const top=P.filter(p=>p.sold_count>0).sort((a,b)=>b.sold_count-a.sold_count).slice(0,5),low=P.filter(p=>p.is_active&&p.stock<=5);
+  $('#ad').innerHTML=`<div class="kpi"><div><b>${money(rev)}</b><span>Chiffre d’affaires encaissé</span></div><div><b>${O.length}</b><span>Commandes</span></div><div><b>${O.filter(x=>x.status==='pending_confirmation').length}</b><span>En attente de confirmation</span></div><div><b>${low.length}</b><span>Produits en stock bas (5 ou moins)</span></div></div>
+  <h3>Ventes encaissées, 14 derniers jours</h3><div class="bars">${by.map((v,i)=>`<i style="height:${v/mx*100}%" title="${days[i]} : ${money(v)}"></i>`).join('')}</div><div class="bl">${days.map(d=>`<span>${d.slice(8)}</span>`).join('')}</div>
+  <p class="muted" style="margin:8px 0 22px">Seules les commandes marquées « Payé » comptent dans le chiffre d’affaires.</p>
+  <div class="two"><div><h3>Produits les plus vendus</h3>${top.length?`<ul>${top.map(p=>`<li>${esc(p.name)} : ${p.sold_count} vendu(s)</li>`).join('')}</ul>`:'<p class="muted">Aucune vente enregistrée.</p>'}</div><div><h3>État des stocks</h3>${low.length?`<ul>${low.map(p=>`<li>${esc(p.name)} : ${p.stock} restant(s)</li>`).join('')}</ul>`:'<p class="muted">Aucun stock bas.</p>'}</div></div>`}
+async function aProducts(){
+  const {data}=await sb.from('products').select('*').order('created_at',{ascending:false});AP=data||[];
+  $('#ad').innerHTML=`<div class="sh"><h2>Produits</h2><button class="btn" onclick="pform()">Nouveau produit</button></div><div class="tw"><table><tr><th>Nom</th><th>Catégorie</th><th>Prix</th><th>Promo</th><th>Stock</th><th>Visible</th><th></th></tr>${AP.map(p=>`<tr><td>${esc(p.name)}${p.is_demo?' (démo)':''}</td><td>${esc(catName(p.category_id))}</td><td>${money(p.price)}</td><td>${p.promo_price!=null?money(p.promo_price):''}</td><td>${p.stock}</td><td>${p.is_active?'Oui':'Non'}</td><td><button class="btn o sm" onclick="pform('${p.id}')">Modifier</button> <button class="btn o sm" onclick="delP('${p.id}')">Supprimer</button></td></tr>`).join('')}</table></div><div id="pf" style="margin-top:26px"></div>
+  <h3 style="margin:26px 0 10px">Catégories</h3><form class="row" onsubmit="addCat(event)"><label>Nouvelle catégorie<input id="nc" required></label><button class="btn o">Ajouter</button></form>`}
+function pform(id){const p=AP.find(x=>x.id===id)||{sizes:[],colors:[],images:[],is_active:true,stock:0};
+  $('#pf').innerHTML=`<form class="fm" onsubmit="saveP(event,'${id||''}')"><h3>${id?'Modifier le produit':'Nouveau produit'}</h3><label>Nom<input name="name" value="${esc(p.name)}" required></label><label>Marque (Nike, Adidas, Asics…)<input name="brand" value="${esc(p.brand)}"></label>
+  <label>Catégorie<select name="category_id">${CATS.map(c=>`<option value="${c.id}" ${c.id===p.category_id?'selected':''}>${esc(c.name)}</option>`).join('')}</select></label>
+  <label>Prix (FCFA)<input name="price" type="number" min="0" value="${p.price??''}" required></label><label>Prix promotionnel (FCFA, facultatif)<input name="promo_price" type="number" min="0" value="${p.promo_price??''}"></label>
+  <label>Stock<input name="stock" type="number" min="0" value="${p.stock}" required></label><label>Tailles (séparées par des virgules)<input name="sizes" value="${esc(p.sizes.join(', '))}"></label><label>Couleurs (séparées par des virgules)<input name="colors" value="${esc(p.colors.join(', '))}"></label>
+  <label>Description<textarea name="description" rows="4">${esc(p.description)}</textarea></label><label>Images (une adresse par ligne)<textarea name="images" id="imgs" rows="3">${esc(p.images.join('\n'))}</textarea></label><label>Importer des images<input type="file" accept="image/*" multiple onchange="upImgs(this)"></label>
+  ${[['is_new','Nouveauté'],['is_trending','Tendance'],['is_active','Visible sur le site'],['is_demo','Produit de démonstration']].map(([k,l])=>`<label><input type="checkbox" name="${k}" ${p[k]?'checked':''}> ${l}</label>`).join('')}<button class="btn">Enregistrer</button></form>`;$('#pf').scrollIntoView({behavior:'smooth'})}
+async function upImgs(inp){for(const f of inp.files){const path=Date.now()+'-'+f.name.replace(/[^\w.]/g,'_');const {error}=await sb.storage.from('product-images').upload(path,f);if(error){toast(error.message,1);continue}$('#imgs').value+=($('#imgs').value?'\n':'')+sb.storage.from('product-images').getPublicUrl(path).data.publicUrl}toast('Images importées, pensez à enregistrer')}
+async function saveP(e,id){e.preventDefault();const f=new FormData(e.target),g=k=>f.get(k),csv=s=>String(s||'').split(',').map(x=>x.trim()).filter(Boolean);
+  const row={name:g('name').trim(),brand:String(g('brand')||'').trim()||null,category_id:g('category_id')||null,price:+g('price'),promo_price:g('promo_price')===''?null:+g('promo_price'),stock:+g('stock'),sizes:csv(g('sizes')),colors:csv(g('colors')),description:g('description'),images:String(g('images')||'').split('\n').map(x=>x.trim()).filter(Boolean),is_new:f.has('is_new'),is_trending:f.has('is_trending'),is_active:f.has('is_active'),is_demo:f.has('is_demo')};
+  if(row.promo_price!=null&&row.promo_price>=row.price)return toast('Le prix promotionnel doit être inférieur au prix',1);
+  let s=slug(row.name);if(AP.some(x=>x.slug===s))s+='-'+Date.now().toString(36);
+  const {error}=await(id?sb.from('products').update(row).eq('id',id):sb.from('products').insert({...row,slug:s}));
+  if(error)return toast(error.message,1);toast('Produit enregistré');await refreshProds();aProducts()}
+async function delP(id){if(!confirm('Supprimer ce produit définitivement ?'))return;const {error}=await sb.from('products').delete().eq('id',id);if(error)return toast(error.message,1);toast('Produit supprimé');await refreshProds();aProducts()}
+async function addCat(e){e.preventDefault();const name=$('#nc').value.trim();const {error}=await sb.from('categories').insert({slug:slug(name),name,position:CATS.length+1});if(error)return toast(error.message,1);CATS=(await sb.from('categories').select('*').order('position')).data||[];renderHd();toast('Catégorie ajoutée');aProducts()}
+async function aOrders(){
+  const {data}=await sb.from('orders').select('*,order_items(*)').order('created_at',{ascending:false}).limit(200);
+  const sel=(id,M,v)=>`<select id="${id}">${Object.entries(M).map(([k,l])=>`<option value="${k}" ${k===v?'selected':''}>${l}</option>`).join('')}</select>`;
+  $('#ad').innerHTML=`<div class="sh"><h2>Commandes</h2></div>${(data||[]).map(o=>`<details class="ord"><summary><b>${o.ref}</b>, ${esc(o.name)}, ${money(o.total)}, ${ST[o.status]}, paiement : ${PS[o.payment_status]}</summary><div class="ob"><p>${esc(o.phone)}${o.email?', '+esc(o.email):''}<br>${esc(o.address)}, ${esc(o.city)}, ${esc(o.country||'')}<br>Livraison ${o.delivery_mode==='local'?'locale':'internationale'}, paiement souhaité : ${PM[o.payment_method]||'non précisé'}, le ${new Date(o.created_at).toLocaleString('fr-FR')}</p>${o.notes?`<p>Note du client : ${esc(o.notes)}</p>`:''}<ul>${o.order_items.map(i=>`<li>${i.qty} × ${esc(i.name)} ${esc([i.size,i.color].filter(Boolean).join(', '))}, ${money(i.unit_price*i.qty)}</li>`).join('')}</ul>
+  <div class="row"><label>Statut${sel('s-'+o.id,ST,o.status)}</label><label>Paiement${sel('p-'+o.id,PS,o.payment_status)}</label><label>Numéro de suivi<input id="t-${o.id}" value="${esc(o.tracking_number||'')}"></label><button class="btn" onclick="saveO('${o.id}')">Mettre à jour</button></div><small class="muted">Passez le paiement à « Payé » uniquement après avoir vérifié sa réception chez le prestataire (MTN, Airtel, banque). Annuler une commande remet les articles en stock.</small></div></details>`).join('')||'<p class="muted">Aucune commande pour le moment.</p>'}`}
+async function saveO(id){const {error}=await sb.from('orders').update({status:$('#s-'+id).value,payment_status:$('#p-'+id).value,tracking_number:$('#t-'+id).value.trim()||null}).eq('id',id);if(error)return toast(error.message,1);toast('Commande mise à jour');await refreshProds()}
+async function aClients(){
+  const [p,s]=await Promise.all([sb.from('profiles').select('*').order('created_at',{ascending:false}),sb.from('support_requests').select('*').order('created_at',{ascending:false})]);
+  $('#ad').innerHTML=`<h2 style="margin-bottom:12px">Demandes d’assistance</h2>${(s.data||[]).map(r=>`<div class="box"><div><b>${r.order_ref?esc(r.order_ref):'Sans commande'}</b><span class="muted">${new Date(r.created_at).toLocaleString('fr-FR')}</span></div><p>${esc(r.message)}</p>${r.status==='open'?`<button class="btn o sm" onclick="closeS('${r.id}')">Marquer comme traitée</button>`:'<span class="muted">Traitée</span>'}</div>`).join('')||'<p class="muted">Aucune demande.</p>'}
+  <h2 style="margin:28px 0 12px">Clients</h2><div class="tw"><table><tr><th>Nom</th><th>Téléphone</th><th>Rôle</th><th>Inscrit le</th></tr>${(p.data||[]).map(c=>`<tr><td>${esc(c.full_name)}</td><td>${esc(c.phone)}</td><td>${c.role==='admin'?'Administrateur':'Client'}</td><td>${new Date(c.created_at).toLocaleDateString('fr-FR')}</td></tr>`).join('')}</table></div>`}
+async function closeS(id){const {error}=await sb.from('support_requests').update({status:'closed'}).eq('id',id);if(error)return toast(error.message,1);aClients()}
+const SF=[['announcement','Annonce (barre supérieure)'],['hero_text','Slogan de la bannière'],['hero_image','Image de la bannière (adresse)'],['shipping_local','Frais de livraison locale (FCFA)',1],['shipping_international','Frais de livraison internationale (FCFA)',1],['delay_local','Délai de livraison locale'],['delay_international','Délai de livraison internationale'],['whatsapp_number','Numéro WhatsApp (format international, ex. 242…)'],['tiktok','TikTok (sans @)'],['instagram','Instagram (sans @)'],['email','E-mail de contact'],['mtn_number','Numéro MTN Mobile Money'],['airtel_number','Numéro Airtel Money'],['mtn_pay_link','Lien de paiement MTN (https://…)']];
+function aSettings(){
+  $('#ad').innerHTML=`<div class="sh"><h2>Paramètres</h2></div><form class="fm" onsubmit="saveS(event)">${SF.map(([k,l,n])=>`<label>${l}<input name="${k}" ${n?'type="number" min="0"':''} value="${esc(S[k])}"></label>`).join('')}<div><label>Moyens de paiement proposés</label>${Object.entries(PM).map(([k,l])=>`<label><input type="checkbox" name="pm_${k}" ${(S.payment_methods||[]).includes(k)?'checked':''}> ${l}</label>`).join('')}</div><button class="btn">Enregistrer</button></form>`}
+async function saveS(e){e.preventDefault();const f=new FormData(e.target);
+  const rows=SF.map(([k,,n])=>({key:k,value:n?+f.get(k)||0:String(f.get(k)||'').trim()}));rows.push({key:'payment_methods',value:Object.keys(PM).filter(k=>f.has('pm_'+k))});
+  const {error}=await sb.from('settings').upsert(rows);if(error)return toast(error.message,1);rows.forEach(r=>S[r.key]=r.value);renderHd();renderFt();toast('Paramètres enregistrés')}
+
+init();
+</script>
+</body></html>
